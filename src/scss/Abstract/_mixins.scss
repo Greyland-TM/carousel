@@ -1,0 +1,21 @@
+@mixin clearFix {
+    &::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+  }
+
+@mixin centerElement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centerElementTop {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}

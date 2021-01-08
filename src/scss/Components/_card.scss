@@ -1,0 +1,32 @@
+.card{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid red;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 22rem;
+    background-color: white;
+    border: 1px solid rgb(134, 134, 134);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .4);
+
+    &__content {
+        position: relative;
+        text-align: center;
+        height: 25rem;
+        width: 100%;
+
+        &--pictue {
+            position: relative;
+            display: block;
+            background-size: cover;
+            height: 70%;
+            top: 0;
+        }
+
+        &--header {
+            @include centerElementTop;
+            top: 0;
+        }
+    }
+}
